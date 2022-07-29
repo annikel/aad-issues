@@ -30,7 +30,7 @@ const Form = () => {
       title: title,
       body: body,
     };
-    axios.post("/api/issues", issue).then((res) => {
+    axios.post("/api/repos/annikel/aad-issues/issues", issue).then((res) => {
       setBody("");
       setTitle("");
       setSent(true);
